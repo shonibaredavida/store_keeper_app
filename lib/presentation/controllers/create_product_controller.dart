@@ -35,16 +35,6 @@ class CreateProductController extends GetxController {
     'box(es)',
   ];
   RxString imagePath = ''.obs;
-  /*   void pickImage(isCamera) async {
-    final ImagePicker picker = ImagePicker();
-    final XFile? imageFile = await picker.pickImage(
-      source: isCamera ? ImageSource.camera : ImageSource.gallery,
-    );
-
-    if (imageFile != null) {
-      imagePath.value = imageFile.path;
-    }
-  } */
   Future<void> pickImage() async {
     final ImagePicker picker = ImagePicker();
     final source = await Get.bottomSheet<ImageSource>(
@@ -96,7 +86,10 @@ class CreateProductController extends GetxController {
     );
 
     if (source != null) {
-      final imageFile = await picker.pickImage(source: source);
+      final imageFile = await picker.pickImage(
+        source: source,
+        preferredCameraDevice: CameraDevice.rear,
+      );
       if (imageFile != null) {
         imagePath.value = imageFile.path;
       }
