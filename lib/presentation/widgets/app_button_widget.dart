@@ -171,7 +171,7 @@ class AppButton extends StatelessWidget {
     } else {
       return SizedBox(
         width: width ?? (isCollapsed ? null : double.maxFinite),
-        height: height ?? (isCollapsed ? null : 48),
+        height: height ?? (isCollapsed ? null : 45),
         child: MaterialButton(
           onPressed: isDisabled
               ? null

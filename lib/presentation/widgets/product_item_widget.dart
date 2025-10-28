@@ -32,13 +32,21 @@ class ProductItemWidget extends StatelessWidget {
                   Container(
                     clipBehavior: Clip.antiAlias,
                     decoration: BoxDecoration(
-                      color: AppColors.grey50,
+                      color: Theme.of(context).brightness == Brightness.dark
+                          ? AppColors.whiteColor
+                          : AppColors.grey100,
                       borderRadius: BorderRadius.circular(12),
                     ),
-                    height: 80,
-                    width: 80,
+                    height: 70,
+                    width: 70,
                     child: product.image!.length < 2
-                        ? Center(child: FlutterLogo(size: 70))
+                        ? Center(
+                            child: Icon(
+                              Icons.shopping_bag,
+                              color: AppColors.primaryColor,
+                              size: 40,
+                            ),
+                          )
                         : Image.file(File(product.image!), fit: BoxFit.cover),
                   ),
                   SizedBox(width: 10),

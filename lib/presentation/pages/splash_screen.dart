@@ -19,7 +19,7 @@ class SplashScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   // ignore: unnecessary_string_escapes
-                  Image.asset('assets/appbar_logo.png'),
+                  Image.asset('assets/appbar_logo.png', height: 100),
 
                   SizedBox(height: 32),
 

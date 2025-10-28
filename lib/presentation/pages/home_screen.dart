@@ -22,7 +22,7 @@ class HomeScreen extends StatelessWidget {
           ? AppColors.blackColor
           : AppColors.grey50,
       appBar: AppBar(
-        title: Text('Store Keeper App', style: AppTextStyles.bodyLg),
+        title: Text('Store Keeper App', style: AppTextStyles.bodyMd),
         centerTitle: true,
         automaticallyImplyLeading: false,
         actions: [
@@ -74,7 +74,7 @@ class HomeScreen extends StatelessWidget {
                     alignment: AlignmentDirectional.center,
                     child: Text('No Product Added'),
                   ),
-                  SizedBox(height: 20),
+                  SizedBox(height: 10),
                   GestureDetector(
                     onTap: () => Get.bottomSheet(
                       CreateProductSheet(),
@@ -83,7 +83,7 @@ class HomeScreen extends StatelessWidget {
                     ),
                     child: Text(
                       'Click to Add Your First Product',
-                      style: AppTextStyles.bodyLg.copyWith(
+                      style: AppTextStyles.bodyMd.copyWith(
                         color: AppColors.info500,
                       ),
                     ),

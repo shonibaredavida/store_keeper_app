@@ -24,8 +24,8 @@ class CreateProductSheet extends StatelessWidget {
       editMode = true;
     }
     return DraggableScrollableSheet(
-      initialChildSize: 0.5,
-      minChildSize: 0.4,
+      initialChildSize: 0.6,
+      minChildSize: 0.55,
       maxChildSize: 0.95,
       builder: (context, scrollController) {
         return SafeArea(
