@@ -40,7 +40,6 @@ class HomeScreenController extends GetxController {
   @override
   void onInit() {
     isLoading.value = true;
-    _dbHelper.deleteALLProductS();
     loadProducts();
     if (Get.isDarkMode) {
       isDarkMode.value = true;
