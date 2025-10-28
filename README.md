@@ -13,6 +13,7 @@ A simple and efficient mobile app for managing store inventory, designed to make
 ## 🎥 Demo App
 
 🎬 [Watch Demo Video](https://drive.google.com/file/d/1eY3uP1PnBtSLcGAPcruKHba9Z_VygPvg/view?usp=sharing)
+
 🎬 [Play the App](https://appetize.io/app/b_2g4kbfgueils3viygpu7v2noj4)
 
 
