@@ -1,4 +1,4 @@
-# <img width="23" height="20" alt="appbar_logo" src="https://github.com/user-attachments/assets/453140d9-3c4d-4bc6-8826-db905d7802be" /> Store Keeper App
+# <img width="35" height="30" alt="appbar_logo" src="https://github.com/user-attachments/assets/453140d9-3c4d-4bc6-8826-db905d7802be" /> Store Keeper App
 
 
 A simple and efficient mobile app for managing store inventory, designed to make store management easier and more organized.
